@@ -1,0 +1,22 @@
+body{
+    box-sizing: border-box;
+}
+
+.home .logo{
+    width: 70%;
+}
+
+.home header section h4{
+    font-size: 15px;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.home main section article{
+    width: 60%;
+}
+
+.footer section h4 p{
+    width: 60%;
+    text-align: center;
+}
