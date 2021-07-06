@@ -1,22 +1,137 @@
-body{
+@import url(general.css);
+
+*{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-.home .logo{
-    width: 70%;
+li{
+    list-style: none;
 }
 
-.home header section h4{
+a{
+    text-decoration: none;
+    color: black;
+}
+
+p{
+    font-family: var(--font-family);
+    font-size: var(--font-size-p);
+}
+
+span{
+    font-size: var(--font-size-precios);
+}
+/*header*/
+header{
+    background-color: var(--Amarillo);
+}
+
+header .logo{
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 40%;
+}
+
+header section .barra{
+    color: var(--GrisOscuro);
+    background-color: var(--GrisClaro);
+    display: inline-block;
+    margin-left: 10px;
+    border: solid 1px black;
+    width: 50%;
+    margin-bottom: 2px;
+}
+
+header section .lupa{
+    margin-left: 10px;
+    padding: 0;
+    width: 5%;
+    border: solid black 1px;
+    background-color: var(--GrisClaro);
+}
+
+header section .lupa a{
+    margin-left: 1.5px;
+}
+
+header .cuotas{
+    font-size: 15px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+header section h4{
     font-size: 15px;
     padding: 0;
     margin: 10px 0;
 }
+header section nav .menu{
+    margin-bottom: 20px;
+}
 
-.home main section article{
+header section nav ul li{
+    font-family: var(--font-family);
+    font-size: 12px;
+}
+
+header section .burgermenu{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+
+header section nav .burger{
+    width: 35px;
+    background-color: var(--Celeste);
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+/*main*/
+
+main section article .pdto{
+    width: 100%;
+}
+
+main section p{
+    font-size: var(--font-size-desc);
+}
+main section article{
     width: 60%;
 }
 
-.footer section h4 p{
-    width: 60%;
+main .banner{
+    display: none
+}
+
+main h3{
+    font-family: var(--font-family);
+    font-size: 24px;
+}
+
+/*footer*/
+
+footer section{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
+    padding: 20px 0 20px 0;
+}
+
+footer section .icons{
+    color: var(--Celeste);
+    width: 100%;
+    size: 7x;
+    padding: 20px 0 20px 0;
+    font-size: 40px;
 }
