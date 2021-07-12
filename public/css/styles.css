@@ -4,6 +4,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: var(--font-family);
 }
 
 li{
@@ -43,14 +44,17 @@ header section .barra{
     border: solid 1px black;
     width: 50%;
     margin-bottom: 2px;
+    border-radius: 3px;
 }
 
 header section .lupa{
+    font-size: 15px;
     margin-left: 10px;
-    padding: 0;
+    padding-top: 2px;
     width: 5%;
     border: solid black 1px;
     background-color: var(--GrisClaro);
+    border-radius: 3px;
 }
 
 header section .lupa a{
@@ -75,6 +79,7 @@ header section nav .menu{
 }
 
 header section nav ul li{
+    display: none;
     font-family: var(--font-family);
     font-size: 12px;
 }
@@ -96,7 +101,30 @@ header section nav .burger{
     text-align: center;
 }
 
+header div.banner{
+    display: none
+}
+
 /*main*/
+
+main{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: var(--GrisClaro)
+}
+
+main h3{
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 24px;
+    padding: 15px;
+    color: var(--GrisOscuro);
+}
+main h4{
+    display: none;
+}
 
 main section article .pdto{
     width: 100%;
@@ -106,17 +134,36 @@ main section p{
     font-size: var(--font-size-desc);
 }
 main section article{
-    width: 60%;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
 }
 
-main .banner{
-    display: none
+main section article div.articulos{
+    border-top: 1px solid var(--GrisClaro);
+    background-color:white;
+}
+main section article div.cont{
+    padding: 15px;
 }
 
-main h3{
-    font-family: var(--font-family);
-    font-size: 24px;
+main section article p.desc{
+    color: var(--Verde);
 }
+
+main section article a.envio{
+    color: var(--Verde);
+    border-radius: var(--Verde) solid 1px;
+}
+
+
+
+main img{
+    border: solid 1px var(--GrisClaro);
+}
+
 
 /*footer*/
 
@@ -134,4 +181,45 @@ footer section .icons{
     size: 7x;
     padding: 20px 0 20px 0;
     font-size: 40px;
+}
+
+/*Media queries*/
+
+/*tablet*/
+
+
+@media (min-width : 361px) {
+    /*header*/
+
+    header section .burgermenu{
+        display: none;
+    }
+
+    header section nav ul li{
+        display: flex;
+        font-family: var(--font-family);
+        font-size: 12px;
+    }
+
+    header div.banner{
+        display: flex;
+    }
+    
+    /*main*/
+
+    main section article div.articulos{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main h4{
+        display: flex;
+        color: var(--GrisOscuro);
+        font-weight: 400;
+        padding: 15px 0 0 0;
+    }
+
+    main div.banner{
+        display: flex;
+        flex-grow: initial;
+    }
 }
