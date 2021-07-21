@@ -76,6 +76,12 @@ header .cuotas{
     width: 100%;
 }
 
+header section.barralogo{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
 header section h4{
     font-size: 15px;
     padding: 0;
