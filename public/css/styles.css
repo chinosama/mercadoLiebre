@@ -33,28 +33,33 @@ header .logo{
     padding-top: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
-    width: 40%;
+    width: 100%;
+}
+
+header section .logobarra{
+    display: flex;
+    width: 100%;
 }
 
 header section .barra{
     color: var(--GrisOscuro);
-    background-color: var(--GrisClaro);
-    display: inline-block;
     margin-left: 10px;
-    border: solid 1px black;
-    width: 50%;
+    width: 100%;
     margin-bottom: 2px;
-    border-radius: 3px;
+    display: flex;
+    height: 20px;
+    align-self: center;
+    align-items: center;
+}
+header section input{
+    width: 80%;
 }
 
 header section .lupa{
-    font-size: 15px;
-    margin-left: 10px;
-    padding-top: 2px;
-    width: 5%;
-    border: solid black 1px;
     background-color: var(--GrisClaro);
-    border-radius: 3px;
+    border: 1px solid grey;
+    display: flex;
+    align-self: center;
 }
 
 header section .lupa a{
@@ -67,6 +72,8 @@ header .cuotas{
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
+    height: 1px;
+    width: 100%;
 }
 
 header section h4{
@@ -141,24 +148,43 @@ main section article{
     padding: 10px 0;
 }
 
+main section article i {
+	display: block;
+	color: var(--Verde);
+	border: 1px solid var(--Verde);
+	border-radius: 50%;
+	font-size: 16px;
+	padding: 5px;
+	width: 30px;
+	height: 30px;
+	background-color: #FFF;
+	position: relative;
+	left: 95%;
+	top: -15px;
+	margin: -30px;
+}
+
+main section article div.preciodesc{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 main section article div.articulos{
     border-top: 1px solid var(--GrisClaro);
     background-color:white;
 }
 main section article div.cont{
-    padding: 15px;
+    padding: 0px 0 15px 15px;
+}
+
+main section article span{
+    padding-right: 10px;
 }
 
 main section article p.desc{
     color: var(--Verde);
 }
-
-main section article a.envio{
-    color: var(--Verde);
-    border-radius: var(--Verde) solid 1px;
-}
-
-
 
 main img{
     border: solid 1px var(--GrisClaro);
@@ -188,12 +214,35 @@ footer section .icons{
 /*tablet*/
 
 
-@media (min-width : 361px) {
+@media (min-width : 426px) {
     /*header*/
 
     header section .burgermenu{
         display: none;
     }
+
+    header section nav.menu{
+        display: flex;
+        width: 100%;
+    }
+
+    header section nav.menuusuario{
+        display: flex;
+        width: 100%;
+    }
+
+    header section nav ul li{
+    
+        padding: 0 15px 0 15px;
+        font-size: 0.70rem;
+    }
+
+    header section.navegacion{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
 
     header section nav ul li{
         display: flex;
@@ -201,11 +250,49 @@ footer section .icons{
         font-size: 12px;
     }
 
+    header section.barralogo{
+        display: flex;
+        width: 100%;
+    }
+
+    header .cuotas{
+        width: 40%;
+        padding: 5% 5px 0 0;
+        height: 5px;
+        font-size: 0.60rem;
+    }
+
+    header section nav .menu{
+        display: flex;
+        width: 100%;
+    }
+
+    header section nav .menuusuario{
+        display: flex;
+    }
+
+    header section nav ul li{
+        padding: 0 15px 0 15px;
+        font-size: 0.55rem;
+    }
+
+    header section.navegacion{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
     header div.banner{
         display: flex;
     }
     
     /*main*/
+
+    main section{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
 
     main section article div.articulos{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -222,4 +309,47 @@ footer section .icons{
         display: flex;
         flex-grow: initial;
     }
+
+    main section article{
+        width: 40%;
+        padding-bottom: 40px;
+    }
+}
+
+
+/*Desktop*/
+
+@media (min-width : 1024px){
+
+
+    header section.barralogo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header section .barra{
+        width: 60%;
+        padding-left: 5px;
+    }
+
+    header .logo{
+        width: 55%;
+    }
+
+    header .cuotas{
+        width: 50%;
+        padding: 0 0 15px 0;
+        height: 5px;
+    }
+
+    header section nav ul li{
+        font-size: 0.70rem;
+    }
+
+    main section article{
+        width: 20%;
+        padding-bottom: 40px;
+    }
+
 }
