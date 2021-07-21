@@ -344,9 +344,10 @@ footer section .icons{
     }
 
     header .cuotas{
-        width: 50%;
-        padding: 0 0 15px 0;
+        width: 30%;
+        padding: 5% 5% 7% 0;
         height: 5px;
+        font-size: 0.80rem;
     }
 
     header section nav ul li{
