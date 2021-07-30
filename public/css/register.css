@@ -1,0 +1,276 @@
+@import url(general.css);
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-family);
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+p{
+    font-family: var(--font-family);
+    font-size: var(--font-size-p);
+}
+
+span{
+    font-size: var(--font-size-precios);
+}
+/*header*/
+header{
+    background-color: var(--Amarillo);
+}
+
+header .logo{
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+header section .logobarra{
+    display: flex;
+    width: 100%;
+}
+
+header section .barra{
+    color: var(--GrisOscuro);
+    margin-left: 10px;
+    width: 100%;
+    margin-bottom: 2px;
+    display: flex;
+    height: 20px;
+    align-self: center;
+    align-items: center;
+}
+header section input{
+    width: 80%;
+}
+
+header section .lupa{
+    background-color: var(--GrisClaro);
+    border: 1px solid grey;
+    display: flex;
+    align-self: center;
+}
+
+header section .lupa a{
+    margin-left: 1.5px;
+}
+
+header .cuotas{
+    font-size: 15px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 1px;
+    width: 100%;
+}
+
+header section.barralogo{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+header section h4{
+    font-size: 15px;
+    padding: 0;
+    margin: 10px 0;
+}
+header section nav .menu{
+    margin-bottom: 20px;
+}
+
+header section nav ul li{
+    display: none;
+    font-family: var(--font-family);
+    font-size: 12px;
+}
+
+header section .burgermenu{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+
+header section nav .burger{
+    width: 35px;
+    background-color: var(--Celeste);
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+header div.banner{
+    display: none
+}
+
+/*main*/
+
+.crear h1{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.crear main section.formulario{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    background-color: var(--GrisClaro);
+    margin: 0 5% 0 5%;
+    padding: 5px 0 20px 0;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.crear main section.formulario form div.box-form{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5% 0 0 5%;
+}
+
+.crear main section.formulario div.intereses h4{
+    padding: 20px 0 10px 15px;
+
+}
+
+.crear main section.formulario form div.box-form-options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.crear main section.formulario form div.box-form-options label{
+    padding:0 5px 0 5px;
+}
+
+.crear main section.formulario div.box-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+}
+
+
+.crear main section.formulario div.box-button-registro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--GrisOscuro);
+}
+
+.crear main section.formulario div.box-button-registro input{
+    background-color: white ;
+    padding: 5px;
+    margin: 20px;
+}
+
+/*footer*/
+
+footer section{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+
+footer section .icons{
+    color: var(--Celeste);
+    width: 100%;
+    size: 7x;
+    padding: 20px 0 20px 0;
+    font-size: 40px;
+}
+
+/*Media queries*/
+
+/*tablet*/
+
+
+@media (min-width : 426px) {
+    /*header*/
+
+    header section .burgermenu{
+        display: none;
+    }
+
+    header section nav.menu{
+        display: flex;
+        width: 100%;
+    }
+
+    header section nav.menuusuario{
+        display: flex;
+        width: 100%;
+    }
+
+    header section nav ul li{
+    
+        padding: 0 15px 0 15px;
+        font-size: 0.70rem;
+    }
+
+    header section.navegacion{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+
+    header section nav ul li{
+        display: flex;
+        font-family: var(--font-family);
+        font-size: 12px;
+    }
+
+    header section.barralogo{
+        display: flex;
+        width: 100%;
+    }
+
+    header .cuotas{
+        width: 40%;
+        padding: 5% 5px 0 0;
+        height: 5px;
+        font-size: 0.60rem;
+    }
+
+    header section nav .menu{
+        display: flex;
+        width: 100%;
+    }
+
+    header section nav .menuusuario{
+        display: flex;
+    }
+
+    header section nav ul li{
+        padding: 0 15px 0 15px;
+        font-size: 0.55rem;
+    }
+
+    header section.navegacion{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    header div.banner{
+        display: flex;
+    }
+}
